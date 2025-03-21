@@ -135,3 +135,28 @@ header, section, .footer {
     position: relative;
     z-index: 1;
 }
+
+/* Add this CSS to make buttons glow on hover */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #444;
+    border-color: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 
+                0 0 25px rgba(255, 255, 255, 0.3), 
+                0 0 35px rgba(255, 255, 255, 0.2);
+}
