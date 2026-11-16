@@ -1,0 +1,33 @@
+name: DoppelNative
+options:
+  minimumXcodeGenVersion: 2.38.0
+  deploymentTarget:
+    iOS: '17.0'
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: '5.9'
+    IPHONEOS_DEPLOYMENT_TARGET: '17.0'
+    TARGETED_DEVICE_FAMILY: '1'
+    SUPPORTS_MACCATALYST: NO
+    CODE_SIGN_STYLE: Automatic
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_CFBundleDisplayName: Doppel Native
+    INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.shopping
+    INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+    INFOPLIST_KEY_UILaunchScreen_Generation: YES
+    MARKETING_VERSION: 0.1.0
+    CURRENT_PROJECT_VERSION: 1
+targets:
+  DoppelNative:
+    type: application
+    platform: iOS
+    sources:
+      - path: DoppelNative
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: fit.doppel.reader.native
+        PRODUCT_NAME: DoppelNative
+        SWIFT_EMIT_LOC_STRINGS: YES
+    scheme:
+      testTargets: []
